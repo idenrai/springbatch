@@ -66,3 +66,10 @@ C:\springbat
         fruit_price2.csv
         schema-all.sql
 ```
+
+##### 実行方法
+
+```Text
+$ gradle build
+$ java -jar build/libs/gs-batch-processing-0.1.0.jar
+```
