@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/batch
+    username: kwon
+    password: kwon
+    driverClassName: org.postgresql.Driver
