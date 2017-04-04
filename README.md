@@ -74,3 +74,10 @@ C:\springbat
 $ gradle build
 $ java -jar build/libs/gs-batch-processing-0.1.0.jar
 ```
+
+参考
+----
+
+-   [Creating a Batch Service](http://spring.io/guides/gs/batch-processing/)
+-   [Spring Batch Tutorial](https://www.mkyong.com/tutorials/spring-batch-tutorial/)
+-   [Spring Batchでバッチ処理](http://dev.classmethod.jp/server-side/java/use_spring-batch_chunk/)
