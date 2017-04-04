@@ -45,26 +45,27 @@ Spring Batchとは
 -   すべてのソースは、[ここ](https://github.com/idenrai/springbatch)にあるので、```git clone https://github.com/idenrai/springbatch.git``` でもOK
 
 ##### プロジェクトの構成
+-   詳細説明はそれぞれのコードを参照
 
 ```Text
 C:\springbat
 │  README.md
-│  build.gradle
+│  build.gradle                       ：ビルド・コンパイル
 │  
 └─src/main
     │
     ├─java/com/test/batch
-    │   Batch.java
-    │   Fruit.java
-    │   FruitItemProcessor.java
-    │   JobStartEndListener.java
-    │   SpringBatchApplication.java
+    │   Batch.java                    ：バッチそのもの
+    │   Fruit.java                    ：DBのカラム設定
+    │   FruitItemProcessor.java       ：取得データ加工（Taskletの中でProcessor）
+    │   JobStartEndListener.java      ：バッチの稼働状態お知られ
+    │   SpringBatchApplication.java   ：main（これがないとGradleは起動しない）
     │          
     └─resource
-        application.yml
-        fruit_price.csv
-        fruit_price2.csv
-        schema-all.sql
+        application.yml               ：DB接続設定
+        fruit_price.csv               ：データ
+        fruit_price2.csv              ：データ
+        schema-all.sql                ：テーブル設定
 ```
 
 ##### 実行方法
